@@ -13,7 +13,7 @@ export async function getCurrentWeather(city) {
     try {
         // Build the API URL with the city name and API key
         // Using 'imperial' units to get Fahrenheit temperatures
-        const url = `${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=imperial`;
+        const url = `${BASE_URL}/weather?q=${city}&APPID=${API_KEY}&units=imperial`;
         
         // Use fetch to make the GET request to the API
         // await pauses execution until the promise resolves
