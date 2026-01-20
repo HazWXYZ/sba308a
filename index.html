@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+
+        <!-- Search section -->
+        <div class="search-box">
+            <div class="search-flex">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="error" id="errorMsg"></div>
+        </div>
+
+        <!-- Loading indicator -->
+        <div class="loading" id="loading">Loading weather data...</div>
+
+        <!-- Current weather display -->
+        <div class="weather-display" id="weatherDisplay">
+            <h2 id="cityName"></h2>
+            <div class="weather-main">
+                <div id="weatherIcon">🌤️</div>
+                <div>
+                    <div class="temperature" id="temperature"></div>
+                    <div class="description" id="description"></div>
+                </div>
+            </div>
+            <div class="weather-details">
+                <div><strong>Feels Like:</strong> <span id="feelsLike"></span></div>
+                <div><strong>Humidity:</strong> <span id="humidity"></span></div>
+                <div><strong>Wind Speed:</strong> <span id="windSpeed"></span></div>
+                <div><strong>Pressure:</strong> <span id="pressure"></span></div>
+            </div>
+        </div>
+
+        <!-- 5-day forecast display -->
+        <div class="forecast-display" id="forecastDisplay">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-grid" id="forecastGrid"></div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript files as modules -->
+    <!-- The main app.js file will import the other modules -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
