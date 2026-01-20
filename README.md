@@ -1,4 +1,4 @@
-##SBA 308A
+SBA 308A
 SBA 308A: 
 JavaScript Web Application
 Version 1.0, 08/18/23
